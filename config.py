@@ -5,7 +5,8 @@ import os
 load_dotenv()
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL"
+    "DATABASE_URL",
+    "sqlite:///./test.db"
 )
 
 SECRET_KEY = os.getenv(
