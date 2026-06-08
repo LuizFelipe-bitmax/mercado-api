@@ -13,6 +13,12 @@ jobs:
   testes:
     runs-on: ubuntu-latest
 
+    env:
+      DATABASE_URL: sqlite:///./test.db
+      SECRET_KEY: teste
+      ALGORITHM: HS256
+      TEMPO_EXPIRACAO: 30
+
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
