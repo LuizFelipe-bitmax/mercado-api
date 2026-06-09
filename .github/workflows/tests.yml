@@ -32,7 +32,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Criar tabelas
-        run: python database/create_tables.py
+        run: python -m database.create_tables
 
       - name: Executar testes
         run: pytest
