@@ -12,10 +12,10 @@ from jose import (
     JWTError
 )
 
-SECRET_KEY = "123456"
-
-ALGORITHM = "HS256"
-
+from config import (
+    SECRET_KEY,
+    ALGORITHM
+)
 
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl="login"
